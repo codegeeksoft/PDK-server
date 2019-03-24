@@ -4,6 +4,7 @@ import { Currency } from './models/currencymodel';
 import { Person } from './models/person.model';
 import { Oil } from './models/oil';
 import { Order } from './models/order';
+import { Item } from './models/item';
 
 // Check example at https://github.com/CarlosRodrigues/Sequelize-typescript-example
 // and https://github.com/suksant/sequelize-typescript-examples
@@ -22,7 +23,9 @@ export const sequelize =  new Sequelize({
 sequelize.addModels([Currency]);
 sequelize.addModels([Person]);
 sequelize.addModels([Oil]);
+sequelize.addModels([Item]);
 sequelize.addModels([Order]);
+
 
 console.log('initializeDatabase');
 
@@ -30,7 +33,7 @@ console.log('initializeDatabase');
 sequelize.authenticate().then(() => {
     console.log("Connected to DB before");
     initializeDatabase();
-populateData();
+//populateData();
     console.log("Connected to DB");
 })
 .catch((err) => {
@@ -47,7 +50,7 @@ function initializeDatabase() {
             return;
         })
         .catch(err => {
-            console.log('err');
+            console.log('err' + err);
         });
 }
 

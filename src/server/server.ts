@@ -27,7 +27,6 @@ server.post('/api/sari', (req, res, next) => {
 
 // allow access from client server
 server.use(function (req, res, next) {
-  console.log('response1' + JSON.stringify(req.body));
   // Website you wish to allow to connect
   res.setHeader('Access-Control-Allow-Origin', '*');
 

@@ -1,5 +1,14 @@
 /* jshint indent: 2 */
-import {Table, Column, DataType, Model, CreatedAt, UpdatedAt} from 'sequelize-typescript';
+import {
+  Table,
+  Column,
+  DataType,
+  Model,
+  CreatedAt,
+  UpdatedAt,
+  IsUUID,
+  PrimaryKey
+} from 'sequelize-typescript';
 
 @Table
 export class Oil extends Model<Oil> {
@@ -10,7 +19,7 @@ export class Oil extends Model<Oil> {
   @Column
   oilCode: string;
 
-  @Column(DataType.DOUBLE('PRICE'))
+  @Column(DataType.DOUBLE)
   price: number;
 
   @Column
