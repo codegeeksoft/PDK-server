@@ -4,6 +4,10 @@ import {currencies} from './routes/currencyRouter';
 import {people} from './routes/personRouter';
 import {oil} from './routes/oilRouter';
 import { order } from './routes/orderRouter';
+import { user } from './routes/userRouter';
+import { retailer } from './routes/retailerRouter';
+import { employee } from './routes/employeeRouter';
+import { module } from './routes/moduleRouter';
 const bodyParser = require('body-parser');
 const hostname = 'localhost';
 const port = 3001;
@@ -51,6 +55,13 @@ server.use('/api/currencies', currencies);
 server.use('/api/people', people);
 server.use('/api/oil', oil);
 server.use('/api/order', order);
+server.use('/api/order/history', order);
+server.use('/api/order', order);
+server.use('/api/user', user);
+server.use('/api/retailer', retailer);
+server.use('/api/employee', employee);
+server.use('/api/module', module);
+
 
 server.listen(port, hostname, () => {
      // connect to the DB

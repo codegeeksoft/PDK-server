@@ -7,7 +7,50 @@ export const order = Router();
 
 // Basic get all route
 order.get('/', (req, res, next) => {
-  Order.findAll()
+  Order.findAll({
+    where: { status: 'NEW' },
+    include: [
+      {
+        model: Item
+      }
+    ]
+  })
+    .then(data => {
+      if(data.length>0){
+        return res.json(data);
+      }else{
+        const dummyData = [{
+          orderId: '',
+          retailer: 'retailer1',
+          depot: 'depot1',
+          transport: 'transport1',
+          supplier: 'supplier1',
+          quantity: 0,
+          amount: 0,
+          totalAmount: 0,
+          status: 'NEW',
+          userId: 'PDK123',
+          items: []
+        }];
+        return res.json(dummyData);
+      }
+     
+    })
+    .catch(err => {
+      console.log(err);
+      return err;
+    });
+});
+
+order.get('/history', (req, res, next) => {
+  Order.findAll({
+    where: { status: 'IN_PROCESS' },
+    include: [
+      {
+        model: Item
+      }
+    ]
+  })
     .then(data => {
       return res.json(data);
     })

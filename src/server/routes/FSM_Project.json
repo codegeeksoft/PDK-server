@@ -1,0 +1,465 @@
+{
+  "swagger": "2.0",
+  "paths": {
+    "/api/": {
+      "get": {
+        "summary": "/api/",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/sari": {
+      "post": {
+        "summary": "/api/sari",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/currencies": {
+      "get": {
+        "summary": "/api/currencies",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      },
+      "post": {
+        "summary": "/api/currencies",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/currencies/{id}": {
+      "get": {
+        "summary": "/api/currencies/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      },
+      "put": {
+        "summary": "/api/currencies/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/people": {
+      "get": {
+        "summary": "/api/people",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/oil": {
+      "get": {
+        "summary": "/api/oil",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      },
+      "post": {
+        "summary": "/api/oil",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/oil/{id}": {
+      "get": {
+        "summary": "/api/oil/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      },
+      "put": {
+        "summary": "/api/oil/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/order": {
+      "get": {
+        "summary": "/api/order",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      },
+      "delete": {
+        "summary": "/api/order",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      },
+      "post": {
+        "summary": "/api/order",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/order/history": {
+      "get": {
+        "summary": "/api/order/history",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      },
+      "delete": {
+        "summary": "/api/order/history",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      },
+      "post": {
+        "summary": "/api/order/history",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/order/{id}": {
+      "get": {
+        "summary": "/api/order/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      },
+      "put": {
+        "summary": "/api/order/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/order/status/{status}/userId/{userId}": {
+      "get": {
+        "summary": "/api/order/status/{status}/userId/{userId}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/order/history/history": {
+      "get": {
+        "summary": "/api/order/history/history",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/order/history/{id}": {
+      "get": {
+        "summary": "/api/order/history/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      },
+      "put": {
+        "summary": "/api/order/history/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/order/history/status/{status}/userId/{userId}": {
+      "get": {
+        "summary": "/api/order/history/status/{status}/userId/{userId}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/user": {
+      "get": {
+        "summary": "/api/user",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      },
+      "post": {
+        "summary": "/api/user",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/user/addFunctionsToUser/{id}": {
+      "post": {
+        "summary": "/api/user/addFunctionsToUser/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/user/{id}": {
+      "put": {
+        "summary": "/api/user/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      },
+      "get": {
+        "summary": "/api/user/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/user/getBusinessByUserId/{id}": {
+      "get": {
+        "summary": "/api/user/getBusinessByUserId/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/retailer": {
+      "get": {
+        "summary": "/api/retailer",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      },
+      "post": {
+        "summary": "/api/retailer",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/retailer/{id}": {
+      "get": {
+        "summary": "/api/retailer/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      },
+      "put": {
+        "summary": "/api/retailer/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    },
+    "/api/employee/addEmployeeToBusiness": {
+      "post": {
+        "summary": "/api/employee/addEmployeeToBusiness",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/employee/deleteEmployeeToBusiness": {
+      "delete": {
+        "summary": "/api/employee/deleteEmployeeToBusiness",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/employee": {
+      "get": {
+        "summary": "/api/employee",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/module": {
+      "get": {
+        "summary": "/api/module",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      },
+      "post": {
+        "summary": "/api/module",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": []
+      }
+    },
+    "/api/module/{id}": {
+      "get": {
+        "summary": "/api/module/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      },
+      "put": {
+        "summary": "/api/module/{id}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true
+          }
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "travelbudget",
+    "version": "0.0.0",
+    "description": "[Specification JSON](/api-spec)"
+  }
+}
